@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Код подтверждения</title>
+	<style>
+		body { margin: 0; padding: 0; background-color: #f4f6f8; font-family: Arial, Helvetica, sans-serif; color: #1f2937; }
+		.email-background { background-color: #f4f6f8; }
+		.email-container { max-width: 560px; background-color: #ffffff; border-radius: 12px; }
+		.email-content { padding: 40px; }
+		.email-spacing { padding: 40px 16px; }
+		h1 { margin: 0 0 24px; font-size: 24px; line-height: 32px; }
+		.intro { margin: 0 0 16px; font-size: 16px; line-height: 24px; }
+		.code { margin: 0 0 24px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: 8px; text-align: center; color: #2563eb; }
+		.expiration { margin: 0; font-size: 14px; line-height: 20px; color: #6b7280; }
+	</style>
+</head>
+<body>
+	<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="email-background">
+		<tr>
+			<td align="center" class="email-spacing">
+				<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="email-container">
+					<tr>
+						<td class="email-content">
+							<h1>Здравствуйте, {{name}}!</h1>
+							<p class="intro">Используйте этот код для подтверждения:</p>
+							<p class="code">{{code}}</p>
+							<p class="expiration">Код действителен до {{expires}}.</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
